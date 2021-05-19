@@ -26,6 +26,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 var dc = {};
 
 var homeHtml = "snippets/home-snippet.html";
+var explorationsHome = "snippets/explorations-home.html"
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -54,6 +55,16 @@ $ajaxUtils.sendGetRequest(
   false);
 });
 
+dc.loadExplorationsHome = function(){
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    explorationsHome,
+    function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+}
 
 global.$dc = dc;
 
