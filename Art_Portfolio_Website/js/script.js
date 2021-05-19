@@ -26,7 +26,12 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 var dc = {};
 
 var homeHtml = "snippets/home-snippet.html";
-var explorationsHome = "snippets/explorations-home.html"
+var explorationsHome = "snippets/explorations-home.html";
+var projects = "snippets/projects.html";
+var aboutMe = "snippets/about-me.html";
+var mixedMediaArt = "snippets/mixed-media.html";
+var digitalArt = "snippets/digital.html";
+var threeDimentionalArt = "snippets/3D.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -55,6 +60,7 @@ $ajaxUtils.sendGetRequest(
   false);
 });
 
+//Explorations Home load into index.html
 dc.loadExplorationsHome = function(){
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
@@ -65,6 +71,68 @@ dc.loadExplorationsHome = function(){
   },
   false);
 }
+
+//Projects page load into index.html
+
+dc.loadProjects = function(){
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    projects,
+    function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+}
+
+//About me page load into indexhtml
+
+dc.loadAboutMe = function(){
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    aboutMe,
+    function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+}
+
+dc.loadMixedMedia = function(){
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    mixedMediaArt,
+    function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+}
+
+dc.loadDigital = function(){
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    digitalArt,
+    function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+}
+
+
+dc.load3D = function(){
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    threeDimentionalArt,
+    function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+}
+
+
 
 global.$dc = dc;
 
