@@ -1,12 +1,12 @@
-$(function () { // Same as document.addEventListener("DOMContentLoaded"...
+//$(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
   // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
-  $("#navbarToggle").blur(function (event) {
-    var screenWidth = window.innerWidth;
-    if (screenWidth < 768) {
-      $("#collapsable-nav").collapse('hide');
-    }
-  });
+  //$("#navbarToggle").blur(function (event) {
+    //var screenWidth = window.innerWidth;
+    //if (screenWidth < 768) {
+      //$("#collapsable-nav").collapse('hide');
+    //}
+  //});
 
   // In Firefox and Safari, the click event doesn't retain the focus
   // on the clicked button. Therefore, the blur event will not fire on
@@ -14,14 +14,14 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   // which is set up above will not be called.
   // Refer to issue #28 in the repo.
   // Solution: force focus on the element that the click event fired on
-  $("#navbarToggle").click(function (event) {
-    $(event.target).focus();
-  });
-});
+  //$("#navbarToggle").click(function (event) {
+    //$(event.target).focus();
+  //});
+//});
 
 
 
-(function (global) {
+/**(function (global) {
 
 var dc = {};
 
@@ -136,4 +136,16 @@ dc.load3D = function(){
 
 global.$dc = dc;
 
-})(window);
+})(window);**/
+
+
+
+
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous">
+
+$(function(){
+      $("#header").load("../decorations/header.html"); 
+      $("#footer").load("../decorations/footer.html");
+});

@@ -46,6 +46,8 @@ a:focus, a:hover {
 #homeheading{
 	margin :40px;
 	font-size : 4em;
+	text-align: center;
+	color: grey;
 }
 
 
@@ -89,6 +91,34 @@ a:focus, a:hover {
   color: grey;
   font-size: 30px;
   padding: 16px 32px;
+}
+
+
+/*PROJECTS PAGE*/
+
+#projectElement{
+	margin: 10%;
+}
+
+#projectImage{
+	margin-left:25%;
+	margin-bottom: 35px;
+	margin-top: 15px;
+	width:50%;
+	height:30%;
+}
+
+/*ABOUT ME*/
+
+#aboutPic{
+	position: relative;
+  	width: 33.3%;
+  	float:left;
+  	padding:3%;
+}
+
+#aboutText{
+	padding:3%;
 }
 /* MEDIA QUERIES */
 @media (max-width: 1200px) and (min-width: 650px){
