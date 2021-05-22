@@ -149,3 +149,4 @@ $(function(){
       $("#header").load("../decorations/header.html"); 
       $("#footer").load("../decorations/footer.html");
 });
+
