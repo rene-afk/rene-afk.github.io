@@ -1,5 +1,4 @@
 /**HEADER**/
-
 #logo-img{
 	background: url('../images/RR_White.png') no-repeat;
 	left-margin:200%;
@@ -17,7 +16,17 @@
 a {
     color: grey;
     text-decoration: none;
-    font-size: 300%
+    font-size: 150%
+}
+
+#highlight{
+	color: black;
+}
+
+span{
+    color: grey;
+    text-decoration: none;
+    font-size: 150%
 }
 
 
@@ -45,7 +54,7 @@ a:focus, a:hover {
 
 #homeheading{
 	margin :40px;
-	font-size : 4em;
+	font-size : 3em;
 	text-align: center;
 	color: grey;
 }
@@ -160,18 +169,29 @@ a:focus, a:hover {
 /* MEDIA QUERIES */
 @media (max-width: 1200px) and (min-width: 650px){
 	a{
-		font-size : 200%;
+		font-size : 150%;
 	}
+	span{
+		font-size : 150%;
+	}
+
 
 }
 
 @media (max-width: 649px) and (min-width: 350px){
 	a{
-		font-size : 125%;
+		font-size : 100%;
+	}
+	span{
+		font-size : 100%;
 	}
 
 	.disappear{
 		font-size: 0;
+	}
+
+	#footer{
+		margin :25px;
 	}
 
 	#homeheading{
@@ -187,9 +207,16 @@ a:focus, a:hover {
 	a{
 		font-size : 80%;
 	}
+	span{
+		font-size : 80%;
+	}
 
 	.disappear{
 		font-size: 0;
+	}
+
+	#footer{
+		margin :5px;
 	}
 
 	#homeheading{
