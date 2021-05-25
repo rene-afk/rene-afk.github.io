@@ -146,7 +146,7 @@ integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 crossorigin="anonymous">
 
 $(function(){
-      $("#header").load("Art_Portfolio_Website/decorations/header.html"); 
-      $("#footer").load("Art_Portfolio_Website/decorations/footer.html");
+      $("#header").load("../decorations/header.html"); 
+      $("#footer").load("../decorations/footer.html");
 });
 
